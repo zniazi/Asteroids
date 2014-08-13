@@ -8,13 +8,13 @@
       var canvasEl = document.getElementsByTagName("canvas")[0];
       canvasEl.height = window.innerHeight;
       canvasEl.width = window.innerWidth;
-      new MovingObject({
+      var a = new Asteroids.MovingObject({
         "pos": [100,100],
         "vel": 0,
         "radius": 100,
-        "color": "#000000",
-      }
-      ).draw()
+        "color": "#00FF00",
+      });
+      a.draw(canvasEl);
     </script>
   </body>
 </html>
