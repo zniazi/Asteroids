@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <script src="./lib/movingObject.js"></script>
+  </head>
+  <body>
+    <canvas></canvas>
+    <script>
+      var canvasEl = document.getElementsByTagName("canvas")[0];
+      canvasEl.height = window.innerHeight;
+      canvasEl.width = window.innerWidth;
+      new MovingObject({
+        "pos": [100,100],
+        "vel": 0,
+        "radius": 100,
+        "color": "#000000",
+      }
+      ).draw()
+    </script>
+  </body>
+</html>
